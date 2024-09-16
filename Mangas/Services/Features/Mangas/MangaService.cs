@@ -1,38 +1,19 @@
 public class MangaService
 {
-    private readonly List<Manga> _mangas = new();
-    
-    public IEnumerable<Manga> GetAll()
+    private readonly MangaRepository _mangaRepository;
+
+    public MangaService(MangaRepository mangaRepository)
     {
-        return _mangas;
+        _mangaRepository = mangaRepository;
     }
 
-    public Manga GetById(int id) 
-    {
-        return _mangas.FirstOrDefault(manga => manga.Id == id);
-    }
+    public List<Manga> GetAll() => _mangaRepository.GetAll();
 
-    public void Add(Manga manga)
-    {
-        _mangas.Add(manga);
-    }
+    public Manga GetById(int id) => _mangaRepository.GetById(id);
 
-    public void Update(Manga mangaToUpdate)
-    {
-        var manga = GetById(mangaToUpdate.Id);
-        if (manga != null)
-        {
-            _mangas.Remove(manga);
-            _mangas.Add(mangaToUpdate);
-        }
-    }
+    public void Add(Manga manga) => _mangaRepository.Add(manga);
 
-    public void Delete(int id) 
-    {
-        var manga = GetById(id);
-        if (manga != null)
-        {
-            _mangas.Remove(manga);
-        }
-    }
+    public void Update(Manga manga) => _mangaRepository.Update(manga);
+
+    public void Delete(int id) => _mangaRepository.Delete(id);
 }

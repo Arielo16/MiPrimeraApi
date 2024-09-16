@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/joselomart/Dot/Mangas/Mangas.csproj": {}
+    "/home/joselomart/Documentos/GitHub/MiPrimeraApi/Mangas/Mangas.csproj": {}
   },
   "projects": {
-    "/home/joselomart/Dot/Mangas/Mangas.csproj": {
+    "/home/joselomart/Documentos/GitHub/MiPrimeraApi/Mangas/Mangas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joselomart/Dot/Mangas/Mangas.csproj",
+        "projectUniqueName": "/home/joselomart/Documentos/GitHub/MiPrimeraApi/Mangas/Mangas.csproj",
         "projectName": "Mangas",
-        "projectPath": "/home/joselomart/Dot/Mangas/Mangas.csproj",
+        "projectPath": "/home/joselomart/Documentos/GitHub/MiPrimeraApi/Mangas/Mangas.csproj",
         "packagesPath": "/home/joselomart/.nuget/packages/",
-        "outputPath": "/home/joselomart/Dot/Mangas/obj/",
+        "outputPath": "/home/joselomart/Documentos/GitHub/MiPrimeraApi/Mangas/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/joselomart/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"

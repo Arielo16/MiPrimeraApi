@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "titulo": "Naruto",
+        "autor": "Masashi Kishimoto",
+        "genero": "Acción, Aventura"
+    },
+    
+    {
+        "id": 2,
+        "titulo": "One Piece",
+        "autor": "Eiichiro Oda",
+        "genero": "Aventura, Comedia"
+    }
+]
