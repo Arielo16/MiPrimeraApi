@@ -2,6 +2,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Agregar servicios a la aplicación
 builder.Services.AddControllers();
+builder.Services.AddScoped<MangaService>();
+builder.Services.AddScoped<MangaRepository>();
 
 // Agregar Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -25,3 +27,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+

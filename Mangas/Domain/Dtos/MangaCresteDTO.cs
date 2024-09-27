@@ -1,8 +1,7 @@
-public class Manga
+public class MangaCreateDTO
 {
-    public int Id { get; set; }
     public string Titulo { get; set; }
     public string Autor { get; set; }
     public string Genero { get; set; }
-    public DateTime PublicationDate { get; set; }  
+    public DateTime PublicationDate { get; set; }
 }
